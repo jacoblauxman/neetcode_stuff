@@ -28,8 +28,8 @@
 // if L finds position first ie L = X, R = Y + K (K being random num)
 // - SORTED so the sum of two points is > Target - decrease R and vice versa in scenario with < Target and L
 // Note: remember the base-1 indexing (+ 1 to L and R return values)
-//
 // need `Ordering` trait
+
 use std::cmp::Ordering;
 
 pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {
