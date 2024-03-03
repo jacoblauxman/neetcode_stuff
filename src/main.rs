@@ -1,5 +1,6 @@
 use neetcode_practice::factory_method_pattern::testing_vehicle_factory;
 use neetcode_practice::insertion_sort;
+// use neetcode_practice::squares_of_a_sorted_array::sorted_squares;
 
 fn main() {
     println!("\n'ello, werld\n\n");
@@ -18,4 +19,12 @@ fn main() {
 
     println!("factory method pattern results: \n");
     testing_vehicle_factory();
+
+    // println!("\n -- -- -- -- -- -- -- --\n");
+    // let mut test = vec![-22, -14, -5, -3, -2, 1, 2, 4, 5, 9, 13, 21, 23];
+    // println!("Here is test arr: {:?}", test);
+    // println!("\n:: aaaand here's results of running `sorted_squares` (in place!) ::\n");
+    // // println!("{:?}", sorted_squares(&mut test));
+    // sorted_squares(&mut test);
+    // println!("{:?}", test);
 }

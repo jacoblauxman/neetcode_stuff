@@ -27,3 +27,14 @@ pub fn maximum_odd_binary_number(s: String) -> String {
 //     s.into_iter().collect()
 
 // }
+
+// 3rd) found from another submission - `iter hell`
+
+// pub fn maximum_odd_binary_number(s: String) -> String {
+//     let ones = s.as_bytes().iter().filter(|c| *c == &b'1').count() - 1;
+//     std::iter::repeat('1')
+//         .take(ones)
+//         .chain(std::iter::repeat('0').take(s.len() - ones - 1))
+//         .chain(std::iter::once('1'))
+//         .collect()
+// }
