@@ -16,6 +16,7 @@ pub mod best_time_to_buy_and_sell_stock;
 
 // dailys
 pub mod bag_of_tokens;
+pub mod linked_list_cycle;
 pub mod maximum_odd_binary_number;
 pub mod minimum_length_of_string_after_deleting_similar_ends;
 pub mod remove_nth_node_from_end_of_list;
