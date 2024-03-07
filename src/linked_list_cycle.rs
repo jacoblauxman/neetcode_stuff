@@ -41,9 +41,12 @@ pub fn has_cycle(head: Option<Rc<RefCell<Node>>>) -> bool {
         // init pointers
         let (mut slow, mut fast) = (Rc::clone(&head), Rc::clone(&head));
         // as long as `fast.next` as well as `fast.next.next` (two steps forward)
+        // -- exits in the event of "no cycle" (`fast` next `is_none()`) -- cycle would `loop` infinitely (without logic ctrl flow's ptr check)
         while fast.borrow().next.is_some()
             && fast.borrow().next.as_ref().unwrap().borrow().next.is_some()
         {
+            // NOTE: need 'temp' variables due to ownership/borrowing: can't borrow `slow/fast` both mutably and immutably in the same scope
+
             // slow incr by 1
             let next_slow = Rc::clone(&slow.borrow().next.as_ref().unwrap());
             slow = next_slow;
@@ -64,6 +67,7 @@ pub fn has_cycle(head: Option<Rc<RefCell<Node>>>) -> bool {
 
             // since `Node` values could match, we instead match their pointer ref's for a cycle
             if slow.as_ptr() == fast.as_ptr() {
+                // `fast` will always catch back up to `slow` over time if the list cycles
                 return true;
             }
         }
