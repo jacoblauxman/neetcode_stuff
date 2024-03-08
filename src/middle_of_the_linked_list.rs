@@ -1,3 +1,6 @@
+// # 876 Middle of the Linked List
+// note: `daily` for 3/7/24
+
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
