@@ -8,6 +8,7 @@ pub use factory_method_pattern::*;
 pub mod merge_two_sorted_lists;
 pub mod reverse_linked_list;
 
+pub mod subarray_sum_equals_k;
 pub mod three_sum;
 pub mod two_sum;
 pub mod two_sum_ii;
@@ -25,4 +26,5 @@ pub mod middle_of_the_linked_list;
 pub mod minimum_common_value;
 pub mod minimum_length_of_string_after_deleting_similar_ends;
 pub mod remove_nth_node_from_end_of_list;
+pub mod remove_zero_sum_consecutive_nodes_from_linked_list;
 pub mod squares_of_a_sorted_array;
