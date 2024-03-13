@@ -15,6 +15,8 @@ pub mod two_sum_ii;
 
 pub mod best_time_to_buy_and_sell_stock;
 
+pub mod counting_bits;
+
 // dailys
 pub mod bag_of_tokens;
 pub mod count_elements_with_maximum_frequency;
