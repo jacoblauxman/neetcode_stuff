@@ -32,9 +32,12 @@ pub mod maximum_odd_binary_number;
 pub mod middle_of_the_linked_list;
 pub mod minimum_common_value;
 pub mod minimum_length_of_string_after_deleting_similar_ends;
+pub mod nth_tribonacci_number;
+pub mod number_of_wonderful_substrings;
 pub mod remove_nth_node_from_end_of_list;
 pub mod remove_zero_sum_consecutive_nodes_from_linked_list;
 pub mod squares_of_a_sorted_array;
+pub mod sum_of_left_leaves;
 
 // Arrays and Hashing
 pub mod contains_duplicate;
