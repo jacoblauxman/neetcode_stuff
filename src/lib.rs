@@ -36,6 +36,7 @@ pub mod nth_tribonacci_number;
 pub mod number_of_wonderful_substrings;
 pub mod remove_nth_node_from_end_of_list;
 pub mod remove_zero_sum_consecutive_nodes_from_linked_list;
+pub mod reverse_prefix_of_word;
 pub mod squares_of_a_sorted_array;
 pub mod sum_of_left_leaves;
 
