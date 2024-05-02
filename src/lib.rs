@@ -26,6 +26,7 @@ pub mod count_elements_with_maximum_frequency;
 pub mod custom_sort_string;
 pub mod find_the_pivot_integer;
 pub mod intersection_of_two_arrays;
+pub mod largest_positive_int_that_exists_with_negative;
 pub mod length_of_last_word;
 pub mod linked_list_cycle;
 pub mod maximum_odd_binary_number;
