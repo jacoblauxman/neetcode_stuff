@@ -44,10 +44,12 @@ pub mod sum_of_left_leaves;
 // Arrays and Hashing
 pub mod contains_duplicate;
 pub mod group_anagrams;
+pub mod remove_element;
 pub mod top_k_frequent_elements;
 pub mod valid_anagram;
 
 // Stack
+pub mod baseball_game;
 pub mod min_stack;
 
 pub mod concatenation_of_array;

@@ -45,6 +45,10 @@ use std::cmp::Ordering::{Equal, Greater, Less};
 
 // B-Search Rows, B-Search Cols
 pub fn search_matrix_ordering(matrix: Vec<Vec<i32>>, target: i32) -> bool {
+    if matrix.is_empty() || matrix[0].is_empty() {
+        return false;
+    }
+
     let (mut top, mut bot) = (0, matrix.len());
     let mut mid_row = 0;
 
@@ -82,60 +86,3 @@ pub fn search_matrix_ordering(matrix: Vec<Vec<i32>>, target: i32) -> bool {
 
     false
 }
-
-// WORK IN PROGRESS - BOUNDARY ISSUES trying to convert Pythonic solution
-// pub fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {
-//     if matrix.is_empty() || matrix[0].is_empty() {
-//         return false;
-//     }
-
-//     let row_len = matrix.len();
-//     let col_len = matrix[0].len();
-
-//     // 'first' (rows) b-search:
-//     let mut top_row = 0;
-//     let mut bot_row = row_len - 1;
-//     // let mut mid_row = 0;
-
-//     while top_row <= bot_row {
-//         let mid_row = top_row + (top_row + bot_row) / 2;
-//         // target is greater than greatest value of 'mid' row (last val), incr. `top_row` "inward"
-//         if target > matrix[mid_row][col_len - 1] {
-//             top_row = mid_row + 1;
-//             // target is less than than smallest value of 'mid' row (first val), decr. `bot_row` "inward"
-//         } else if target < matrix[mid_row][0] {
-//             bot_row = mid_row - 1;
-//             // the target value is within the current row
-//         } else {
-//             break;
-//         }
-//     }
-
-//     // after iter: `target` does not exist within provided `matrix`
-//     if top_row > bot_row {
-//         return false;
-//     }
-
-//     // second 'cols' b-search
-//     let mid_row = top_row + (top_row + bot_row) / 2;
-//     let mut left = 0;
-//     let mut right = col_len - 1;
-
-//     while left <= right {
-//         let mid_col = left + (left + right) / 2;
-
-//         // target is greater than current 'mid' val, incr. `left` to new range
-//         if target > matrix[mid_row][mid_col] {
-//             left = mid_col + 1;
-//             // target is less than current 'mid' val, decr. `right` to new range
-//         } else if target < matrix[mid_row][mid_col] {
-//             right = mid_col - 1;
-//             // target is found
-//         } else {
-//             return true;
-//         }
-//     }
-
-//     // no target found within `mid_row`
-//     false
-// }
