@@ -53,3 +53,7 @@ pub mod min_stack;
 pub mod concatenation_of_array;
 pub mod maximum_subarray;
 pub mod maximum_sum_circular_subarray;
+
+// Binary Search
+// :: Search Array
+pub mod search_2d_matrix;
