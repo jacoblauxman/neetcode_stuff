@@ -22,8 +22,11 @@ pub mod counting_bits;
 
 // dailys
 pub mod bag_of_tokens;
+pub mod boats_to_save_people;
+pub mod compare_version_numbers;
 pub mod count_elements_with_maximum_frequency;
 pub mod custom_sort_string;
+pub mod delete_node_in_a_linked_list;
 pub mod find_the_pivot_integer;
 pub mod intersection_of_two_arrays;
 pub mod largest_positive_int_that_exists_with_negative;
