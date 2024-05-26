@@ -27,6 +27,7 @@ pub mod compare_version_numbers;
 pub mod count_elements_with_maximum_frequency;
 pub mod custom_sort_string;
 pub mod delete_node_in_a_linked_list;
+pub mod double_number_represented_as_linked_list;
 pub mod find_the_pivot_integer;
 pub mod intersection_of_two_arrays;
 pub mod largest_positive_int_that_exists_with_negative;
@@ -61,5 +62,6 @@ pub mod maximum_subarray;
 pub mod maximum_sum_circular_subarray;
 
 // Binary Search
+pub mod search_in_a_binary_tree;
 // :: Search Array
 pub mod search_2d_matrix;
