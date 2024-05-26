@@ -65,3 +65,6 @@ pub mod maximum_sum_circular_subarray;
 pub mod search_in_a_binary_tree;
 // :: Search Array
 pub mod search_2d_matrix;
+// :: Search Range
+pub mod first_bad_version;
+pub mod guess_number_higher_or_lower;
