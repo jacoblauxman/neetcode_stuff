@@ -46,6 +46,10 @@ pub mod reverse_prefix_of_word;
 pub mod squares_of_a_sorted_array;
 pub mod sum_of_left_leaves;
 
+pub mod minimum_number_pushes_type_word_ii;
+pub mod number_of_senior_citizens;
+pub mod range_sum_of_sorted_sub_arrays;
+
 // Arrays and Hashing
 pub mod contains_duplicate;
 pub mod group_anagrams;
